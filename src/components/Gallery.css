@@ -1,0 +1,48 @@
+.gallery-container {
+    background-color: #1f2937; /* Dark background */
+    color: #ffffff; /* White text */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 1rem; /* Padding */
+  }
+  
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery-button {
+    background-color: #000000; /* Blue background */
+    color: #ffffff; /* White text */
+    border-radius: 0.25rem; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding */
+    cursor: pointer;
+  }
+  
+  .gallery-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .gallery-thumbnails {
+    display: flex;
+    gap: 0.5rem; /* Space between thumbnails */
+  }
+
+  .gallery-thumbnail {
+    width: 13rem; /* Thumbnail width */
+    height: 13rem; /* Thumbnail height */
+    object-fit: cover;
+    border-radius: 0.5rem; /* Rounded corners */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-out, transform 0.5s ease-out;
+    transform-origin: bottom; /* Ensure the image scales upwards */
+  }
+  
+  .gallery-thumbnail:hover {
+    transform: rotate(-2deg) scale(1.1);
+    filter: grayscale(0%);
+  }
+  
+  
